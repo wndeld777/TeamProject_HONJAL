@@ -7,6 +7,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  list-style: none; /* 앞에 점 지우기 */
+  text-decoration: none;
+}
 html {
   height: 100%;
   box-sizing: border-box;
@@ -17,22 +21,29 @@ header h1 {
   color: #99c4c8;
   font-size: 40px;
 }
-nav.menu-bar {
+.menubar {
   display: flex;
   justify-content: center;
   background-color: #c3e5e9;
 }
-nav.menu-bar ul.menu {
+.menubar ul.menu {
   display: flex;
-  list-style: none; /* 앞에 점 지우기 */
 }
-nav.menu-bar ul.menu li {
+.menubar ul.menu li {
   font-family: "S-CoreDream-3Light";
   font-size: 18px;
   margin-right: 70px;
 }
+.menubar ul.menu li ul {
+  position: absolute; /* 문서의 일반적인 흐름을 따르지 않고 가장 가까운 조상에 대해 상대적 위치로 배치 */
+  display: none;
+  padding-left: 0px;
+}
+.menubar ul.menu li:hover ul {
+  display: block;
+  z-index: 9999;
+}
 a {
-  text-decoration: none;
   color: black;
 }
 a:hover {
