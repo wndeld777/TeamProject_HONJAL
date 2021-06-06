@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+header h1 {
+  font-family: "S-CoreDream-3Light";
+  text-align: center;
+  color: #99c4c8;
+  font-size: 40px;
+}
+nav.menu-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #c3e5e9;
+}
+nav.menu-bar ul.menu {
+  display: flex;
+  list-style: none; /* 앞에 점 지우기 */
+}
+nav.menu-bar ul.menu li {
+  font-family: "S-CoreDream-3Light";
+  font-size: 18px;
+  margin-right: 70px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: bolder;
+}
