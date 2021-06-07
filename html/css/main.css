@@ -20,7 +20,7 @@
 }
 
 * {
-  list-style: none; /* 앞에 점 지우기 */
+  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
