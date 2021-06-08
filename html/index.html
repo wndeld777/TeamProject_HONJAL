@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/main_top.css" />
   </head>
   <body>
     <header>
@@ -28,14 +28,14 @@
     </header>
 
     <article id="main_top">
-      <section id="user">
+      <section id="main_user">
         <!-- form 추가하기 -->
         <input name="" placeholder="ID" />
         <input name="" placeholder="PASSWORD" />
         <button>LOGIN</button>
         <button>SIGN UP</button>
       </section>
-      <section id="slide">
+      <section id="main_slide">
         <img src="images/home.jpg" class="slide" alt="집" />
         <img src="#" class="slide" alt="집" />
         <img src="#" class="slide" alt="집" />
@@ -52,23 +52,159 @@
     </article>
 
     <article id="main_middle">
-      <section id="best">
-        <h2>최근 일주일 인기글</h2>
+      <section id="main_best">
+        <h2>🔥 [ 생활TIP ] <span>최근 일주일 인기글</span></h2>
         <img src="images/best_sample.jpg" alt="최근 일주일 인기글" />
         <div>
-          <!-- 리스트로 만들어보기 -->
-          <a href="#"><p>hihi hello 헬로 하이</p></a>
-          <a href="#"><p>hihi hellodkjsdkflsㅣㅏ</p></a>
+          <ul>
+            <li class="list_best">
+              1시간만에 끝! 벽걸이 에어컨 분해없는 셀프청소 노하우
+            </li>
+            <li class="list_best">
+              니트 세탁법: 이제 드라이 맡기지 말고 집에서 손쉽게!
+            </li>
+            <li class="list_best">
+              옷은 다 어디에 있냐고요? 예쁜 원룸 속 옷 수납법!
+            </li>
+            <li class="list_best">
+              천연세제 3종의 차이점과 활용법, 정리해봤어요
+            </li>
+            <li class="list_best">공간에 따른 효율적인 수납Tip을 알아보아요</li>
+          </ul>
         </div>
       </section>
-      <section id="best2">
-        <h2>정보게시판</h2>
+      <section id="main_data">
+        <h2>&#128270; 정보게시판</h2>
         <img src="images/best_sample.jpg" alt="정보게시판" />
-        <div></div>
+        <div>
+          <ul>
+            <li class="list_best">
+              1시간만에 끝! 벽걸이 에어컨 분해없는 셀프청소 노하우
+            </li>
+            <li class="list_best">
+              니트 세탁법: 이제 드라이 맡기지 말고 집에서 손쉽게!
+            </li>
+            <li class="list_best">
+              옷은 다 어디에 있냐고요? 예쁜 원룸 속 옷 수납법!
+            </li>
+            <li class="list_best">
+              천연세제 3종의 차이점과 활용법, 정리해봤어요
+            </li>
+            <li class="list_best">공간에 따른 효율적인 수납Tip을 알아보아요</li>
+          </ul>
+        </div>
       </section>
     </article>
 
-    <article class="main_bottom"></article>
+    <article id="main_bottom">
+      <h2>최신글</h2>
+
+      <table class="board">
+        <tr>
+          <th>No.</th>
+          <th>게시판</th>
+          <th>글제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회수</th>
+          <th>추천수</th>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="seq">1</td>
+          <td class="category">공지사항</td>
+          <td class="title">혼자서도 잘해요</td>
+          <td class="name">서녕</td>
+          <td class="date">2021-06-08 22:41</td>
+          <td class="hita">729</td>
+          <td class="good"></td>
+        </tr>
+      </table>
+    </article>
+
+    <footer>
+      <address>CopyRight &copy; honjal@hanjal.com</address>
+    </footer>
 
     <div class=""></div>
   </body>
