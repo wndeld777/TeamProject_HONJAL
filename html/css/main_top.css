@@ -108,3 +108,38 @@ article#main_top > section#slide {
 .circle:first-child {
   background-color: #99c4c8;
 }
+
+/* slide ------------------------------------------------------------ */
+
+#main_middle {
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+#main_middle > section#best,
+#main_middle > section#best2 {
+  width: 50%;
+}
+
+#main_middle > section#best > h2,
+#main_middle > section#best2 > h2 {
+  font-size: 18px;
+  color: red;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+#main_middle > section#best > img,
+#main_middle > section#best2 > img {
+  float: left;
+}
+
+#main_midde > section#best > div > a > p {
+  line-height: 2;
+}
