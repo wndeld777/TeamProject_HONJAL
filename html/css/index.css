@@ -13,7 +13,6 @@
 
 * {
   font-family: "NanumBarunGothic";
-  list-style: none;
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
@@ -160,13 +159,22 @@ article#main_top {
   cursor: pointer;
 }
 
+.list_num {
+}
+
+ol {
+  list-style: decimal !important;
+  margin: 10px;
+}
+
 .list_best {
-  list-style: decimal;
   line-height: 2.3;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+
+  border: 1px solid green;
 }
 
 /* bottom ------------------------------------------------------------ */
