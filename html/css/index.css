@@ -16,18 +16,19 @@
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
+  list-style: none;
 }
 
-/* user ------------------------------------------------------------ */
-
-article#main_top {
+#main_top {
   display: flex;
   width: 100%;
   max-width: 1050px;
   margin: auto;
-  margin-top: 230px;
+  margin-top: 50px;
   /* 가운데 정렬 해줘야 해서 margin:auto 쓰고 헤더높이만큼 아래로 와야 되기 때문에 margin-top을 그 아래에 써줌 */
 }
+
+/* user ------------------------------------------------------------ */
 
 /* height 쓰지 않고 padding */
 #main_user {
@@ -159,11 +160,7 @@ article#main_top {
   cursor: pointer;
 }
 
-.list_num {
-}
-
 ol {
-  list-style: decimal !important;
   margin: 10px;
 }
 
@@ -173,8 +170,6 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
-
-  border: 1px solid green;
 }
 
 /* bottom ------------------------------------------------------------ */
@@ -194,6 +189,7 @@ ol {
 }
 
 .board {
+  table-layout: fixed;
   width: 100%;
   width: 1050px;
   margin: auto;
