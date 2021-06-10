@@ -178,14 +178,14 @@ ol {
   width: 100%;
   max-width: 1050px;
   margin: auto;
-  margin-top: 50px;
 }
 
-#main_bottom h2 {
+.new {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 450px;
+  margin-top: 50px;
 }
 
 .board {

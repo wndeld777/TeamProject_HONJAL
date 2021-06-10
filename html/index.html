@@ -32,10 +32,12 @@
     <article id="main_top">
       <section id="main_user">
         <!-- form 추가하기 -->
-        <input name="" placeholder="ID" />
-        <input name="" placeholder="PASSWORD" />
-        <button>LOGIN</button>
-        <button>SIGN UP</button>
+        <form id="login" method="POST">
+          <input name="" placeholder="ID" />
+          <input name="" placeholder="PASSWORD" />
+          <button>LOGIN</button>
+          <button>SIGN UP</button>
+        </form>
       </section>
       <section id="main_slide">
         <img src="images/home.jpg" class="slide" alt="집" />
@@ -99,10 +101,10 @@
         </div>
       </section>
     </article>
-
+    <div class="new_box">
+      <h2 class="new">최신글</h2>
+    </div>
     <article id="main_bottom">
-      <h2>최신글</h2>
-
       <table class="board">
         <tr>
           <th width="15%">No.</th>
