@@ -7,7 +7,6 @@
     <title>HONJAL</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/board.css" />
   </head>
   <body>
@@ -26,7 +25,7 @@
       </nav>
     </header>
 
-    <article id="main_bottom">
+    <article id="info_box">
       <h2 class="title">자취 Q&A</h2>
       <p id="p1">
         <input type="text" placeholder="검색어를 입력하세요" />
@@ -124,19 +123,28 @@
           <td></td>
         </tr>
         <tr>
-          <td class="seq">1</td>
+          <td>1</td>
 
-          <td class="title">
-            혼자서도 잘해요 혼자서도 잘해요 혼자서도 잘해요 혼자서도 잘해요
+          <td>
             혼자서도 잘해요
+            <span>[4]</span>
           </td>
-          <td class="name">서녕</td>
-          <td class="date">2021.06.08</td>
-          <td class="hita">729</td>
-          <td class="good"></td>
+          <td>서녕</td>
+          <td>2021.06.08</td>
+          <td>729</td>
+          <td>32</td>
         </tr>
       </table>
-      <button id="writer">글쓰기</button>
+      <div class="paging">
+        <a href="#">&laquo;</a>
+        <a href="#" class="on">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+        <button id="writer">글쓰기</button>
+      </div>
     </article>
 
     <footer>
