@@ -1,6 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
 * {
-  padding: 0;
+  font-family: "NanumBarunGothic";
+  text-decoration: none;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -13,6 +27,8 @@ fieldset {
   margin: 2% auto;
   border: 1px solid white;
   border-radius: 15px;
+  width: 100%;
+  max-width: 1050px;
 }
 .board_title h2 {
   margin-top: 70px;
@@ -23,6 +39,8 @@ fieldset {
 form div {
   width: 80%;
   margin: 20px auto;
+  width: 100%;
+  max-width: 1050px;
 }
 form label {
   text-align: right;
@@ -30,37 +48,43 @@ form label {
   width: 30%;
   margin: 8px 5px;
   padding: 10px;
-  color: gray;
+  color: black;
   font-weight: bold;
 }
 form input {
   width: 35%;
-
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 25px;
   outline: 0;
   border-color: gray;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn_check {
-  padding: 5px 10px;
-  border-radius: 12px;
+  padding: 10px 30px;
+  border-radius: 25px;
   margin-left: 3%;
   outline: 0;
-  border-color: gray;
+  border-color: rgb(184, 184, 184);
+  color: rgb(39, 38, 38);
+  border: 0;
 }
 
 .btn_signbtn {
-  justify-content: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn_sign {
   margin-left: 35%;
 }
 .btn_sign button {
   padding: 10px 30px;
-  border-radius: 12px;
+  border-radius: 25px;
   margin-left: 3%;
   outline: 0;
-  border-color: gray;
+  border-color: rgb(184, 184, 184);
+  color: rgb(39, 38, 38);
+  border: 0;
 }
