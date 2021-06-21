@@ -1,30 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="rootPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HONJAL</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/nav.js"></script>
-  </head>
+  
   <body>
-    <header>
-      <nav id="navi">
-        <a href="index.html"><img src="images/logo_v5.jpg" alt="로고" /></a>
-        <ul id="menu">
-          <li class="menu_list">공지사항</li>
-          <li class="menu_list">정보게시판</a></li>
-          <li class="menu_list">생활 TIP</li>
-          <li class="menu_list">랜선집들이</li>
-          <li class="menu_list">혼잘TALK</li>
-          <li class="menu_list">리뷰게시판</li>
-          <li class="menu_list">자취 Q&A</li>
-        </ul>
-      </nav>
-    </header>
     <article id="main_top">
       <section id="main_user">
         <form id="login" method="POST">
