@@ -4,8 +4,9 @@
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html lang="ko">
-  
+  <%@ include file="/WEB-INF/views/include/include_head.jspf"%>
   <body>
+  <%@ include file="/WEB-INF/views/include/include_header.jspf"%>
     <article id="main_top">
       <section id="main_user">
         <form id="login" method="POST">
