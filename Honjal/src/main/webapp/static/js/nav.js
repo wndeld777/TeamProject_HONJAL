@@ -1,26 +1,24 @@
-// 메뉴 이동
-
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#menu").addEventListener("click", (ev) => {
-    let text = ev.target.textContent;
-    let url = ""; // 초기화 꼭 해줘야함
+  document.querySelector("#menu").addEventListener("click", (e) => {
+    let text = e.target.textContent;
+    let url = `${rootPath}`;
 
-    if (text == "공지사항") {
-      url += "notice.html";
-    } else if (text == "정보게시판") {
-      url += "info.html";
-    } else if (text == "생활 TIP") {
-      url += "tip.html";
-    } else if (text == "랜선집들이") {
-      url += "interior.html";
-    } else if (text == "혼잘TALK") {
-      url += "talk.html";
-    } else if (text == "리뷰게시판") {
-      url += "review.html";
-    } else if (text == "자취 Q&A") {
-      url += "qna.html";
+    if (text === "공지사항") {
+      url += "/notice/board";
+    } else if (text === "정보게시판") {
+      url += "/info";
+    } else if (text === "생활 TIP") {
+      url += "/tip";
+    } else if (text === "랜선집들이") {
+      url += "/interior";
+    } else if (text === "혼잘TALK") {
+      url += "/talk";
+    } else if (text === "리뷰게시판") {
+      url += "/review";
+    } else if (text === "자취 Q&A") {
+      url += "/qna";
     }
 
-    document.location.href = url;
+    location.href = url;
   });
 });

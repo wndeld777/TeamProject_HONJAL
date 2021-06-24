@@ -1,4 +1,4 @@
-package com.honjal.honjal;
+package com.honjal.honjal.controller;
 
 import java.util.Locale;
 

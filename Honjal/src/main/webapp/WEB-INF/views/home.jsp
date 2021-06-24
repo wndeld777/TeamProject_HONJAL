@@ -2,9 +2,10 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
+<%@taglib  prefix="spring" uri="http://www.springframework.org/tags" %>   
 <!DOCTYPE html>
 <html lang="ko">
-  <%@ include file="/WEB-INF/views/include/include_head.jspf"%>
+<%@ include file="/WEB-INF/views/include/include_head.jspf"%>
   <body>
   <%@ include file="/WEB-INF/views/include/include_header.jspf"%>
     <article id="main_top">
@@ -18,7 +19,7 @@
       </section>
       <section id="main_slide">
         <div id="slide_img_box">
-          <img src="images/sample_slide.jpg" class="slide" alt="집" />
+          <img src="<spring:url value='static/images/sample_slide.jpg'/>">
           <img src="#" class="slide" alt="집" />
           <img src="#" class="slide" alt="집" />
         </div>
