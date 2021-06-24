@@ -5,7 +5,7 @@
 <script src="${rootPath}/static/js/nav.js?ver=2021-06-22-004"></script>
 <header>
       <nav id="navi">
-        <a href="index.html"><img src="images/logo_v5.jpg" alt="로고" /></a>
+        <a href="index.html"><img src="<spring:url value='static/images/logo_v5.jpg'/>" alt="로고" /></a>
         <ul id="menu">
           <li class="menu_list">공지사항</li>
           <li class="menu_list">정보게시판</li>
