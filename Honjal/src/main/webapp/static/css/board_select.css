@@ -13,7 +13,6 @@
       format("truetype");
 }
 .title {
-  margin-top: 20px;
   font-size: 25px;
   font-family: "NanumBarunGothic";
   margin-left: 5%;
@@ -42,7 +41,6 @@ input:focus {
 button#search {
   padding: 10px;
   margin-right: 0;
-  border-radius: 50px;
   outline: 0;
   border: 2px solid #b3d83c;
   background-color: white;
@@ -55,7 +53,6 @@ button#writer {
   cursor: pointer;
   width: 100px;
   margin-left: 200px;
-  border-radius: 15px;
   border: 2px solid #b3d83c;
   background-color: white;
 }
@@ -71,7 +68,6 @@ tr:hover {
 /* ------------------------------------------------------------------------- */
 
 #info_box {
-  padding-top: 50px;
   width: 100%;
   max-width: 1050px;
   margin: auto;

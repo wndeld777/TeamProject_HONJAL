@@ -12,6 +12,8 @@
 <link href="${rootPath}/static/css/nav.css?ver=2021-06-27-007" rel="stylesheet" />
 <link href="${rootPath}/static/css/common.css?ver=2021-06-22-003" rel="stylesheet" />
 <link href="${rootPath}/static/css/home.css?ver=2021-06-22-003" rel="stylesheet" />
+<link href="${rootPath}/static/css/board.css?ver=2021-06-28-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/board_select.css?ver=2021-06-28-001" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -52,6 +54,9 @@
 			<c:when test="${BODY == 'QNA_MAIN' }">
 				<%@ include file="/WEB-INF/views/qna/main.jsp"%>
 			</c:when>
+			<c:when test="${BODY == 'JOIN_MAIN' }">
+				<%@ include file="/WEB-INF/views/join.jsp"%>
+			</c:when>
 			<c:otherwise>
 				<%@ include file="/WEB-INF/views/main.jsp"%>
 			</c:otherwise>
@@ -65,7 +70,7 @@
 	</footer>
 </body>
 <script>
-document.querySelector("#menu").addEventListener("click", (e) => {
+document.querySelector("#menu_box").addEventListener("click", (e) => {
     let text = e.target.textContent;
     let url = `${rootPath}`;
 
@@ -83,6 +88,8 @@ document.querySelector("#menu").addEventListener("click", (e) => {
       url += "/review";
     } else if (text === "자취 Q&A") {
       url += "/qna";
+    } else if (text === "SIGN UP") {
+      url += "/join";
     }
 
     location.href = url;

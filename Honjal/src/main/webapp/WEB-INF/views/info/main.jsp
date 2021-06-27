@@ -2,27 +2,13 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
-<header>
-	<nav id="navi">
-		<a href="index.html"><img src="images/logo_v5.jpg" alt="로고" /></a>
-		<ul id="menu">
-			<li class="menu_list">공지사항</li>
-			<li class="menu_list">정보게시판</li>
-			<li class="menu_list">생활 TIP</li>
-			<li class="menu_list">랜선집들이</li>
-			<li class="menu_list">혼잘TALK</li>
-			<li class="menu_list">리뷰게시판</li>
-			<li class="menu_list">자취 Q&A</li>
-		</ul>
-	</nav>
-</header>
 
-<article id="info_box">
+<article id="main_box">
 	<h2 class="title">정보게시판</h2>
-	<p id="p1">
-		<input type="text" placeholder="검색어를 입력하세요" />
-		<button id="search">검색</button>
-	</p>
+	<div id="search">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <button id="search">검색</button>
+      </div>
 	<table class="board">
 		<tr>
 			<th width="15%">No.</th>
@@ -118,8 +104,3 @@
 		<a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">&raquo;</a>
 	</div>
 </article>
-
-<footer>
-	<address>&copy; 2021. honjal All pictures cannot be copied
-		without permission.</address>
-</footer>

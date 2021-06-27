@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
-<article id="main_top">
+	<article id="main_top">
       <section id="main_user">
         <form id="login" method="POST">
           <input name="" placeholder="ID" />
@@ -55,7 +55,7 @@
           </ol>
         </div>
       </section>
-      <section id="main_data">
+      <section id="main_info">
         <h2>&#128270; 정보게시판</h2>
         <div>
           <img src="static/images/sample_data.png"/>
@@ -69,6 +69,8 @@
         </div>
       </section>
     </article>
+    
+    
     <article id="main_bottom">
       <h2>&#128221; 최신글</h2>
       <table class="board">
