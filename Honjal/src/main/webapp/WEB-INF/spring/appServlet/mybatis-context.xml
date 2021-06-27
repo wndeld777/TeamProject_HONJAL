@@ -13,18 +13,23 @@
 		<property name="password" value=""/>
 	</bean>
 	
+	
 	<!-- sesstionFactory -->
+	<!-- 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"/>
-		<!-- <property name="mapperLocations" value="/WEB-INF/spring/mybatis-mapper/*-mapper.xml"/> -->
-		<!-- <property name="typeAliasesPackage" value="com.honjal.honjal.model"/> -->
+		<property name="mapperLocations" value="/WEB-INF/spring/mybatis-mapper/*-mapper.xml"/>
+		<property name="typeAliasesPackage" value="com.honjal.honjal.model"/>
 	</bean>
+	 -->
 	
 	<!-- <mybatis-spring:scan base-package="com.honjal.honjal.dao"/> -->
 	
 	<!-- sesstionTemplate -->
+	<!--
 	<bean class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory"/>
 	</bean>
+	 -->
 
 </beans>

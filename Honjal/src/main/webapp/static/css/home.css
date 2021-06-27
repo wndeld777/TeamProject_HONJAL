@@ -1,24 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-style: normal;
-  font-weight: 400;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
-      format("embedded-opentype"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
-      format("woff"),
-    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
-      format("truetype");
-}
 
-* {
-  font-family: "NanumBarunGothic";
-  text-decoration: none;
-  box-sizing: border-box;
-  margin: 0;
-}
 
 a {
   color: black;
@@ -46,7 +28,7 @@ a {
 
 #main_user input {
   display: block;
-  width: 200px;
+  width: 90%;
   margin: auto;
   outline: 0;
   border-radius: 50px;
@@ -68,15 +50,12 @@ a {
   height: 30px;
   margin: auto;
   margin-top: 10px;
-  border: 0;
-  background-color: white;
-  border: 2px solid #b3d83c;
-  border-radius: 25px;
-  color: rgb(39, 38, 38);
+  border: 2px solid lightgray;
 }
 
 #main_user button:hover {
-  cursor: pointer;
+  border: 2px solid #b3d83c;
+  transition: 0.5s;
 }
 
 /* top ( slide ) ------------------------------------------------------------ */

@@ -36,7 +36,7 @@ header {
   /* position: fixed; 상단에 고정 */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
 
