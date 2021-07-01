@@ -11,25 +11,9 @@
         });
       }
     </script>
-  </head>
-  <body>
-    <header>
-      <nav id="navi">
-        <a href="index.html"><img src="images/logo_v5.jpg" alt="로고" /></a>
-        <ul id="menu">
-          <li class="menu_list">공지사항</li>
-          <li class="menu_list">정보게시판</li>
-          <li class="menu_list">생활 TIP</li>
-          <li class="menu_list">랜선집들이</li>
-          <li class="menu_list">혼잘TALK</li>
-          <li class="menu_list">리뷰게시판</li>
-          <li class="menu_list">자취 Q&A</li>
-        </ul>
-      </nav>
-    </header>
 
-    <article id="info_box">
-      <h2 class="title">SCRAP</h2>
+    <article id="main_box">
+      <h2 class="board_title">SCRAP</h2>
       <div id="select">
         <p id="p1">
           <input type="text" placeholder="검색어를 입력하세요" />

@@ -51,15 +51,16 @@ button:hover {
 
 /* ------------------------------------------------------------------------- */
 
-#main_box {
+#main_box, #join_form {
   width: 100%;
   max-width: 1050px;
   margin: auto;
+  text-align: center;
 }
 
 .board {
-  table-layout: fixed;
   width: 100%;
+  max-width: 1050px;
   margin: auto;
   text-align: center;
 }
@@ -82,16 +83,11 @@ button:hover {
 
 
 
-
-
-
 /* board ---------------------------------------------------------------------------------------- */
 
 
 
-
-
-#board_title {
+.board_title {
 	font-family: "NanumBarunGothic";
   font-size: 25px;
   margin: auto;
@@ -108,6 +104,8 @@ select {
   justify-content: flex-end;
   margin-bottom: 30px;
 }
+
+/*
 input {
   margin-right: 10px;
   padding: 10px;
@@ -115,6 +113,8 @@ input {
   outline: 0;
   border: 1px solid lightgray;
 }
+*/
+
 input:focus {
   border-radius: 15px;
   border: 1px solid gray;

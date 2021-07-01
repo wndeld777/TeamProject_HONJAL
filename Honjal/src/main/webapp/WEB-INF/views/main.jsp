@@ -7,8 +7,8 @@
         <form id="login" method="POST">
           <input name="" placeholder="ID" />
           <input name="" type="password" placeholder="PASSWORD" />
-          <button>LOGIN</button>
-          <button>SIGN UP</button>
+          <button type="button">LOGIN</button>
+          <button type="button">SIGN UP</button>
         </form>
       </section>
       <section id="main_slide">

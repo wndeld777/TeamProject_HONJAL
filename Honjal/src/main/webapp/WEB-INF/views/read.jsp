@@ -2,38 +2,36 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
-<div class="ground">
-      <div class="btn_ud">
-        <button class="update">수정</button>
-        <button class="delete">삭제</button>
+<div class="main_box">
+      <div class="ud_box">
+        <button class="btn_update">수정</button>
+        <button class="btn_delete">삭제</button>
       </div>
-      <section class="writing">
-        <div class="writing_title">전대 정문 고기 찐맛집 '술돼지' 리뷰 ~!</div>
+      <section class="writing_box">
+        <h3 class="writing_title">전대 정문 고기 찐맛집 '술돼지' 리뷰 ~!</h3>
         <div class="writing_good">
           <img src="images/good.png" />
           <p>729</p>
         </div>
         <div>
-          <p align="right" class="writing_date">2021-06-14 09:45</p>
+          <p align="right" class="writing_time">2021-06-14 09:45</p>
           <div class="writing_user">
-            <p class="writing_user_name">서녕</p>
-            <img src="images/user.png" class="writing_user_img" />
+            <p class="writing_name">서녕</p>
+            <img src="images/user.png" class="user_img" />
           </div>
         </div>
-        <hr />
         <div class="writing_content">
           <p>광주광역시 북구 전남대학교 정문쪽에 위치한 고깃집 술돼지 ,,</p>
-          <p>정말 너무너무너무너무너무 맛있어요 ,,</p>
           <img src="images/sample_meat.jpg" />
         </div>
         <div class="writing_bottom">
-          <div class="box_like">
-            <img src="images/good.png" class="like" />
+          <div class="good_box">
+            <img src="images/good.png" class="good" />
           </div>
           <button>스크랩</button>
         </div>
       </section>
-      <section class="comment">
+      <section class="comment_box">
         <p>댓글 2</p>
         <hr />
         <table id="tb_comment_list">

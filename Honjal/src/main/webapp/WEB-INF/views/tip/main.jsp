@@ -3,29 +3,26 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
 
-    <article id="info_box">
-      <h2 class="title">생활 TIP</h2>
-
-      <p id="p1">
-        <input type="text" placeholder="검색어를 입력하세요" />
-        <button id="search">검색</button>
-      </p>
-
+    <article class="main_box">
+      <h2 class="board_title">생활 TIP</h2>
+      <div class="search_box">
+		<input type="text" placeholder="검색어를 입력하세요" />
+		<button id="btn_search">검색</button>
+		</div>
+		
       <table class="board">
         <tr>
           <th width="15%">No.</th>
-          <th id="select" width="10%">
+          <th class="content_head" width="10%">
             말머리
             <select>
               <option selected>전체</option>
-              <option>세탁&청소</option>
-
+              <option>청소&세탁</option>
               <option>요리</option>
               <option>공간활용</option>
               <option>기타</option>
             </select>
           </th>
-
           <th width="40%">글제목</th>
           <th width="15%">작성자</th>
           <th width="10%">작성일</th>

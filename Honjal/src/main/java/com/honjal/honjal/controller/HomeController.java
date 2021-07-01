@@ -66,7 +66,28 @@ public class HomeController {
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String join(Model model) {
 		
-		model.addAttribute("BODY", "JOIN_MAIN");
+		model.addAttribute("BODY", "JOIN");
+		return "home";
+	}
+	
+	@RequestMapping(value = "/read", method = RequestMethod.GET)
+	public String read(Model model) {
+		
+		model.addAttribute("BODY", "READ");
+		return "home";
+	}
+	
+	@RequestMapping(value = "/scrap", method = RequestMethod.GET)
+	public String scrap(Model model) {
+		
+		model.addAttribute("BODY", "SCRAP");
+		return "home";
+	}
+	
+	@RequestMapping(value = "/write/admin", method = RequestMethod.GET)
+	public String write_admin(Model model) {
+		
+		model.addAttribute("BODY", "WRITE_ADMIN");
 		return "home";
 	}
 	
