@@ -170,15 +170,15 @@
           <td></td>
         </tr>
         <tr>
-          <td class="tb_seq">15792</td>
-          <td class="tb_category">공지사항</td>
-          <td class="tb_title">
+          <td>15792</td>
+          <td>공지사항</td>
+          <td>
             1인 가구 커뮤니티 '혼자서도 잘해요' <span>[205]</span>
           </td>
-          <td class="tb_name">서녕</td>
-          <td class="tb_date">09:25</td>
-          <td class="tb_hits">729</td>
-          <td class="tb_good"></td>
+          <td>서녕</td>
+          <td>09:25</td>
+          <td>729</td>
+          <td></td>
         </tr>
       </table>
     </article>

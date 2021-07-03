@@ -34,15 +34,12 @@
       format("truetype");
 }
 
-* {
-  box-sizing: border-box;
-}
-
 button {
   background-color: white;
   border: 2px solid #b3d83c;
   border-radius: 25px;
   color: rgb(39, 38, 38);
+  outline: 0;
 }
 
 button:hover {
@@ -51,18 +48,19 @@ button:hover {
 
 /* ------------------------------------------------------------------------- */
 
-#main_box, #join_form {
-  width: 100%;
-  max-width: 1050px;
+.main_box, #join_form {
+	font-family: "NanumBarunGothic";
+  width: 1050px;
   margin: auto;
   text-align: center;
 }
 
 .board {
-  width: 100%;
-  max-width: 1050px;
+	table-layout: fixed;
+  width: 1050px;
   margin: auto;
   text-align: center;
+  border-collapse: collapse;
 }
 
 .board tr th {
@@ -81,14 +79,7 @@ button:hover {
   border-bottom: 0.5px solid #eae9e9;
 }
 
-
-
-/* board ---------------------------------------------------------------------------------------- */
-
-
-
 .board_title {
-	font-family: "NanumBarunGothic";
   font-size: 25px;
   margin: auto;
   margin-left: 5%;
@@ -148,21 +139,6 @@ tr:hover {
   background-color: #faf5ef;
 }
 
-
-/* copyright ------------------------------------------------------------ */
-
-footer {
-  width: 100%;
-  max-width: 1050px;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-top: 3px solid #d6b26e;
-  line-height: 5;
-}
-.board span {
-  color: red;
-}
 /* paging --------------------------------------------------------------------*/
 .paging {
   display: flex;
@@ -190,6 +166,7 @@ footer {
 }
 
 /* scrap 삭제 버튼 ------------------------------------------------------------------------------ */
+
 button#delete {
   height: 40px;
   cursor: pointer;
@@ -201,4 +178,8 @@ button#delete {
 }
 button#delete:hover {
   box-shadow: 2px 2px 2px #bbb;
+}
+
+.board span {
+  color: red;
 }

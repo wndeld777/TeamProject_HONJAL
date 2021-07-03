@@ -15,30 +15,36 @@
   padding: 0;
   text-decoration: none;
 }
+
+footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 3px solid #d6b26e;
+  line-height: 5;
+}
+
 </style>
-<link href="${rootPath}/static/css/nav.css?ver=2021-06-30-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/main.css?ver=2021-07-02-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/common.css?ver=2021-07-02-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/board.css?ver=2021-06-30-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/board_select.css?ver=2021-06-30-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/nav.css?ver=2021-07-04-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/common.css?ver=2021-07-04-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/main.css?ver=2021-07-04-002" rel="stylesheet" />
+<link href="${rootPath}/static/css/board.css?ver=2021-07-04-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/join.css?ver=2021-06-30-005" rel="stylesheet" />
 </head>
 <body>
 	<header>
-		<nav id="navi">
-			<img src="static/images/logo_v5.jpg">
-			<ul id="menu_box">
-				<li class="menu_list">공지사항</li>
-				<li class="menu_list">정보게시판</li>
-				<li class="menu_list">생활 TIP</li>
-				<li class="menu_list">랜선집들이</li>
-				<li class="menu_list">혼잘TALK</li>
-				<li class="menu_list">리뷰게시판</li>
-				<li class="menu_list">자취 Q&A</li>
-			</ul>
-		</nav>
+		<img src="static/images/logo_v5.jpg">
+		<ul id="menu_box">
+			<li class="menu_list">공지사항</li>
+			<li class="menu_list">정보게시판</li>
+			<li class="menu_list">생활 TIP</li>
+			<li class="menu_list">랜선집들이</li>
+			<li class="menu_list">혼잘TALK</li>
+			<li class="menu_list">리뷰게시판</li>
+			<li class="menu_list">자취 Q&A</li>
+		</ul>
 	</header>
-	
 	<section id="main_sec">
 		<c:choose>
 			<c:when test="${BODY == 'NOTICE_MAIN' }">

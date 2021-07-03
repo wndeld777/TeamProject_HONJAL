@@ -6,9 +6,9 @@
 <article class="main_box">
 	<h2 class="board_title">정보게시판</h2>
 	<div class="search_box">
-        <input type="text" placeholder="검색어를 입력하세요" />
-        <button id="btn_search">검색</button>
-     </div>
+        <input class="search_input" type="text" placeholder="검색어를 입력하세요" />
+        <button class="btn_search">검색</button>
+    </div>
      
 	<table class="board">
 		<tr>
