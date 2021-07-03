@@ -2,9 +2,10 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
+
 	<article id="main_top">
       <section id="main_user">
-        <form id="login" method="POST">
+        <form id="login_box" method="POST">
           <input name="" placeholder="ID" />
           <input name="" type="password" placeholder="PASSWORD" />
           <button type="button">LOGIN</button>
@@ -17,10 +18,8 @@
           <img src="#" class="slide" alt="집" />
           <img src="#" class="slide" alt="집" />
         </div>
-
         <button class="btn left">&lang;</button>
         <button class="btn right">&rang;</button>
-
         <div id="circleBox">
           <div class="circle"></div>
           <div class="circle"></div>
@@ -28,6 +27,7 @@
         </div>
       </section>
     </article>
+
 
     <article id="main_middle">
       <section id="main_best">

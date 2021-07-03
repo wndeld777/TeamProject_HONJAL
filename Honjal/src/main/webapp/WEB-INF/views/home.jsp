@@ -8,10 +8,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>혼자서도 잘해요</title>
-<link href="${rootPath}/static/css/reset.css?ver=2021-06-30-001" rel="stylesheet" />
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+</style>
 <link href="${rootPath}/static/css/nav.css?ver=2021-06-30-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/common.css?ver=2021-06-30-002" rel="stylesheet" />
-<link href="${rootPath}/static/css/home.css?ver=2021-06-30-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/main.css?ver=2021-07-02-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/common.css?ver=2021-07-02-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/board.css?ver=2021-06-30-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/board_select.css?ver=2021-06-30-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/join.css?ver=2021-06-30-005" rel="stylesheet" />

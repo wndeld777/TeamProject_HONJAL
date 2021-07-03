@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-* {
-  text-decoration: none;
-  box-sizing: border-box;
-  margin: 0;
-}
-
 header {
   width: 100%;
   margin: auto;
@@ -13,7 +7,7 @@ header {
 }
 
 header img {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #navi {
@@ -52,5 +46,5 @@ header img {
 }
 
 header {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }

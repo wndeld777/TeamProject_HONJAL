@@ -1,15 +1,13 @@
 @charset "UTF-8";
 
 
-#main_top {
+#main_top, #main_middle {
   display: flex;
   width: 70%;
   height: 225px;
-  min-width: 1050px;
   margin: auto;
   align-items: flex-start;
   justify-content: space-between;
-  /* 가운데 정렬 해줘야 해서 margin:auto 쓰고 헤더높이만큼 아래로 와야 되기 때문에 margin-top을 그 아래에 써줌 */
 }
 
 /* top ( user ) ------------------------------------------------------------ */
@@ -41,11 +39,11 @@
   transition: 0.5s;
 }
 
-#login input:focus {
+#login_box input:focus {
   width: 100%;
 }
 
-#main_user button {
+#input_box button {
   width: 80px;
   height: 30px;
   margin: auto;
@@ -53,7 +51,7 @@
   border: 2px solid lightgray;
 }
 
-#main_user button:hover {
+#input_box button:hover {
   border: 2px solid #b3d83c;
   transition: 0.5s;
 }
@@ -75,6 +73,7 @@
 
 #main_slide img {
   width: 100%;
+  height: 100%;
   display: none;
   cursor: pointer;
   transition: transform 0.5s linear;
@@ -129,12 +128,7 @@
 /* middle ( best , data )  ------------------------------------------------------------ */
 
 #main_middle {
-	width: 70%;
-  min-width: 1050px;
-	margin: auto;
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
 }
 
 #main_best,
