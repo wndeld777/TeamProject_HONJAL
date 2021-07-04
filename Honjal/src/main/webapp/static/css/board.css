@@ -1,88 +1,129 @@
 @charset "UTF-8";
 
-#search_box {
+.board_title {
+  font-size: 25px;
+  margin: auto;
+  font-weight: normal;
+}
+
+.search_box {
   display: flex;
-  margin-bottom: 30px;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 .search_input {
+  border: 1px solid lightgray;
+  border-radius: 15px;
   margin-right: 10px;
   padding: 10px;
-  border-radius: 15px;
-  outline: 0;
-  border: 1px solid lightgray;
 }
 
 .search_input:focus {
-  border-radius: 15px;
-  border: 1px solid gray;
+  border-color: gray;
 }
 
 .btn_search {
-	border-color: gray;
-	width: 40px;
-	height: 30px;
-}
-
-button#writer {
-  height: 40px;
-  cursor: pointer;
-  width: 100px;
-  margin-left: 200px;
-  outline: 0;
-  border: 2px solid #b3d83c;
+  width: 50px;
+  padding: 10px;
+  border-color: lightgray;
+  border-radius: 15px;
   background-color: white;
 }
 
-.board tr td:nth-of-type(2) {
+.board {
+  table-layout: fixed;
+  width: 1050px;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 10px;
+  text-align: center;
+}
+
+.board tr th {
+  border-top: 2px solid gray;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #f5f3f3;
+  border-bottom: 1px solid lightgray;
+}
+
+.board tr:hover {
+  background-color: #faf5ef;
+}
+
+.board tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 12px 5px;
+  border-bottom: 0.5px solid #eae9e9;
+}
+
+.td_title {
   text-align: left;
   cursor: pointer;
 }
-tr:hover {
-  background-color: #faf5ef;
-}
-td#align {
-  text-align: left;
+
+.board span {
+  color: red;
 }
 
-/* paging --------------------------------------------------------------------*/
-.paging {
+/* paging, write --------------------------------------------------------------------*/
+
+.paging_box {
   display: flex;
-
-  margin-left: 400px;
-  margin-top: 30px;
-  width: 60%;
+  justify-content: center;
+  width: 100%;
   height: 35px;
 }
 
-.paging a {
+.paging_box a {
   color: black;
-
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.5s;
 }
 
-.paging a.on {
+.paging_box a.on {
   background-color: #f2fad8;
 }
 
-.paging a:hover:not(.on) {
+.paging_box a:hover:not(.on) {
   background-color: #f2fad8;
 }
 
-/* copyright ------------------------------------------------------------ */
-
-footer {
+.btn_write_box {
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  max-width: 1050px;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-top: 3px solid #d6b26e;
-  line-height: 5;
 }
-.board span {
-  color: red;
+
+.btn_write {
+  width: 90px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #b3d83c;
+  background-color: white;
+  cursor: pointer;
 }
+
+/* scrap 삭제 버튼 ------------------------------------------------------------------------------ */
+
+#scrap_delete_box {
+	display: flex;
+	width: 100%;
+}
+
+#scrap_delete {
+  height: 40px;
+  width: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+

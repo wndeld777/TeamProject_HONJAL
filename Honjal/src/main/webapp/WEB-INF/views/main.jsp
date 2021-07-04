@@ -86,7 +86,7 @@
         <tr>
           <td>15801</td>
           <td>자취Q&A</td>
-          <td>입주청소 업체 어디까지 청소해주시나요? <span>[1]</span></td>
+          <td class="td_title">입주청소 업체 어디까지 청소해주시나요? <span>[1]</span></td>
           <td>청소시러</td>
           <td>09:50</td>
           <td>7</td>
@@ -95,7 +95,7 @@
         <tr>
           <td>15800</td>
           <td>혼잘TALK</td>
-          <td>자취 꿀팁 50가지 <span>[9]</span></td>
+          <td class="td_title">자취 꿀팁 50가지 <span>[9]</span></td>
           <td>푸우</td>
           <td>09:49</td>
           <td>62</td>
@@ -104,7 +104,7 @@
         <tr>
           <td>15799</td>
           <td>혼잘TALK</td>
-          <td>하 집가고싶다</td>
+          <td class="td_title">하 집가고싶다</td>
           <td>집가고 싶어요</td>
           <td>09:45</td>
           <td>10</td>
@@ -113,7 +113,7 @@
         <tr>
           <td>15798</td>
           <td>리뷰게시판</td>
-          <td>전대 정문 고기 찐맛집 '술돼지' 리뷰 ~! <span>[2]</span></td>
+          <td class="td_title">전대 정문 고기 찐맛집 '술돼지' 리뷰 ~! <span>[2]</span></td>
           <td>돼지</td>
           <td>09:45</td>
           <td>35</td>
@@ -122,7 +122,7 @@
         <tr>
           <td>15797</td>
           <td>생활TIP</td>
-          <td>
+          <td class="td_title">
             원인 모를 빨래 냄새 없애는, '완벽한' 세탁기 청소법 <span>[7]</span>
           </td>
           <td>빨래널기귀찮아</td>
@@ -133,7 +133,7 @@
         <tr>
           <td>15796</td>
           <td>혼잘TALK</td>
-          <td>알콜프리에 취해 ~쿵짝쿵짝</td>
+          <td class="td_title">알콜프리에 취해 ~쿵짝쿵짝</td>
           <td>쥬크박스</td>
           <td>09:39</td>
           <td>12</td>
@@ -142,7 +142,7 @@
         <tr>
           <td>15795</td>
           <td>혼잘TALK</td>
-          <td>오늘 중흥동에서 점심 같이 드실 분,, <span>[1]</span></td>
+          <td class="td_title">오늘 중흥동에서 점심 같이 드실 분,, <span>[1]</span></td>
           <td>혼밥러</td>
           <td>09:38</td>
           <td>6</td>
@@ -151,7 +151,7 @@
         <tr>
           <td>15794</td>
           <td>랜선집들이</td>
-          <td>
+          <td class="td_title">
             낡은 원룸이 집순이의 아지트로 | 3가지만 기억하세요!
             <span>[12]</span>
           </td>
@@ -163,7 +163,7 @@
         <tr>
           <td>15793</td>
           <td>혼잘TALK</td>
-          <td>LG생활건강 생활용품 할인 !! <span>[16]</span></td>
+          <td class="td_title">LG생활건강 생활용품 할인 !! <span>[16]</span></td>
           <td>버즈</td>
           <td>09:31</td>
           <td>85</td>
@@ -172,7 +172,7 @@
         <tr>
           <td>15792</td>
           <td>공지사항</td>
-          <td>
+          <td class="td_title">
             1인 가구 커뮤니티 '혼자서도 잘해요' <span>[205]</span>
           </td>
           <td>서녕</td>

@@ -210,9 +210,3 @@
 .board span {
   color: rgb(218, 4, 4);
 }
-
-/* 글제목은 왼쪽 정렬하고 마우스 커서 모양 바뀜 */
-.board tr td:nth-of-type(3) {
-  text-align: left;
-  cursor: pointer;
-}

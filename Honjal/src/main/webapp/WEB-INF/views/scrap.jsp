@@ -10,17 +10,16 @@
           checkbox.checked = selectAll.checked;
         });
       }
-    </script>
+</script>
 
-    <article id="main_box">
-      <h2 class="board_title">SCRAP</h2>
-      <div id="select">
-        <p id="p1">
-          <input type="text" placeholder="검색어를 입력하세요" />
-          <button id="search">검색</button>
-        </p>
-      </div>
-      <table class="board">
+<article class="main_box">
+      <h2 class="board_title">스크랩</h2>
+      <div class="search_box">
+		<input class="search_input" type="text" placeholder="검색어를 입력하세요" />
+        <button class="btn_search">검색</button>
+		</div>
+
+	<table class="board">
         <tr>
           <th width="5%">
             <input type="checkbox" name="allcheck" onclick="selectAll(this)" />
@@ -31,7 +30,6 @@
             <select>
               <option selected>전체</option>
               <option>생활TIP-세탁&청소</option>
-
               <option>생활TIP-요리</option>
               <option>생활TIP-공간활용</option>
               <option>랜선집들이</option>
@@ -139,15 +137,17 @@
           <td><input type="checkbox" name="allcheck" /></td>
           <td>1</td>
           <td>공지사항</td>
-          <td id="align">혼자서도 잘해요<span>[4]</span></td>
+          <td class="td_title">혼자서도 잘해요<span>[4]</span></td>
           <td>서녕</td>
           <td>2021.06.08</td>
           <td>729</td>
           <td></td>
         </tr>
       </table>
-      <div class="paging">
-        <button id="delete">삭제</button>
+      <div id="scrap_delete_box">
+      	<button id="scrap_delete">삭제</button>
+      </div>
+      <div class="paging_box">
         <a href="#">&laquo;</a>
         <a href="#" class="on">1</a>
         <a href="#">2</a>

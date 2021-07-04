@@ -84,7 +84,7 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/write/admin", method = RequestMethod.GET)
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
 	public String write_admin(Model model) {
 		
 		model.addAttribute("BODY", "WRITE_ADMIN");

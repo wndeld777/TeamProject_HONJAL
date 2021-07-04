@@ -92,15 +92,19 @@
 		</tr>
 		<tr>
 			<td>1</td>
-
-			<td id="align">혼자서도 잘해요<span>[4]</span></td>
+			<td class="td_title">혼자서도 잘해요<span>[4]</span></td>
 			<td>서녕</td>
 			<td>2021.06.08</td>
 			<td>729</td>
 		</tr>
 	</table>
-	<div class="paging">
-		<a href="#">&laquo;</a> <a href="#" class="on">1</a> <a href="#">2</a>
-		<a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">&raquo;</a>
-	</div>
+	<div class="paging_box">
+        <a href="#">&laquo;</a>
+        <a href="#" class="on">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
 </article>

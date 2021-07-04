@@ -9,11 +9,65 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>혼자서도 잘해요</title>
 <style>
+/* 제목 - 여기어때잘난체 */
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 메뉴 - 롯데마트드림체 */
+@font-face {
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff")
+      format("woff");
+}
+
+/* 본문 - 나눔바른고딕 */
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
   padding: 0;
   text-decoration: none;
+  outline: 0;
+}
+
+.main_box, #join_form, .write_form {
+	font-family: "NanumBarunGothic";
+  width: 1050px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  border: 2px solid #b3d83c;
+  border-radius: 25px;
+  color: rgb(39, 38, 38);
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -26,11 +80,12 @@ footer {
 }
 
 </style>
-<link href="${rootPath}/static/css/nav.css?ver=2021-07-04-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/common.css?ver=2021-07-04-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/main.css?ver=2021-07-04-002" rel="stylesheet" />
-<link href="${rootPath}/static/css/board.css?ver=2021-07-04-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/join.css?ver=2021-06-30-005" rel="stylesheet" />
+<link href="${rootPath}/static/css/nav.css?ver=2021-07-04-003" rel="stylesheet" />
+<link href="${rootPath}/static/css/main.css?ver=2021-07-04-005" rel="stylesheet" />
+<link href="${rootPath}/static/css/board.css?ver=2021-07-04-006" rel="stylesheet" />
+<link href="${rootPath}/static/css/join.css?ver=2021-07-04-003" rel="stylesheet" />
+<link href="${rootPath}/static/css/read.css?ver=2021-07-04-005" rel="stylesheet" />
+<link href="${rootPath}/static/css/write_admin.css?ver=2021-07-04-003" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -73,6 +128,12 @@ footer {
 			</c:when>
 			<c:when test="${BODY == 'SCRAP' }">
 				<%@ include file="/WEB-INF/views/scrap.jsp"%>
+			</c:when>
+			<c:when test="${BODY == 'READ' }">
+				<%@ include file="/WEB-INF/views/read.jsp"%>
+			</c:when>
+			<c:when test="${BODY == 'WRITE_ADMIN' }">
+				<%@ include file="/WEB-INF/views/admin/write.jsp"%>
 			</c:when>
 			<c:otherwise>
 				<%@ include file="/WEB-INF/views/main.jsp"%>

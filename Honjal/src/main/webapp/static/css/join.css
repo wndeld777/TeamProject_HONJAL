@@ -4,12 +4,6 @@
 	font-family: "NanumBarunGothic";
 }
 
-#join_form {
-	width: 100%;
-	max-width: 1050px;
-	text-align: center;
-}
-
 #join_form fieldset {
 	width: 80%;
 	margin: auto;
@@ -36,21 +30,24 @@
   width: 220px;
   padding: 10px 25px;
   border-radius: 15px;
-  outline: 0;
-  border-color: gray;
+  border: 1px solid #b6b6b6;
   align-items: center;
 }
 
-.btn_id_check {
+#join_form input:focus {
+	border-color: gray;
+}
+
+#btn_id_check {
+	display: inline-block;
+	margin-left: 10px;
   padding: 10px 15px;
-  border-radius: 25px;
   border: 0;
-  outline: 0;
+  border-radius: 25px;
   background-color: #e8e8e8;
   color: black;
-  width: 100px;
+  width: 80px;
   height: 35px;
-  display: inline-block;
 }
 
 #join_btn {

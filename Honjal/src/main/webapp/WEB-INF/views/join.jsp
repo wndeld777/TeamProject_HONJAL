@@ -6,11 +6,10 @@
 <form id="join_form">
       <h2 class="board_title">회원 가입</h2>
       <fieldset>
-      
         <div>
           <label>아이디</label>
           <input type="text" id="member_id" placeholder="6자 이상 영문과 숫자 조합"/>
-          <button class="btn_id_check">중복확인</button>
+          <button id="btn_id_check">중복확인</button>
         </div>
         <div>
           <label>비밀번호</label>

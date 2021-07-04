@@ -2,15 +2,16 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
-<form>
+
+<form  class="write_form">
       <div class="board_title">
         <h2>글쓰기</h2>
       </div>
       <fieldset>
         <div class="admin_top">
           <select>
-            <option id="honzal">공지사항</option>
-            <option id="honzal">정보게시판</option>
+            <option id="honzal">혼잘TALK</option>
+            <option id="honzal">자유TALK</option>
           </select>
           <input
             class="write_input"

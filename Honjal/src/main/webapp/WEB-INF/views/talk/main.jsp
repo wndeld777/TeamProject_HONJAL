@@ -3,17 +3,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
 
-    <article class="main_box">
-      <h2 class="board_title">혼잘TALK</h2>
+<article class="main_box">
+      <h2 class="board_title">혼잘 TALK</h2>
       <div class="search_box">
-		<input type="text" placeholder="검색어를 입력하세요" />
-		<button id="btn_search">검색</button>
+		<input class="search_input" type="text" placeholder="검색어를 입력하세요" />
+        <button class="btn_search">검색</button>
 		</div>
 		
       <table class="board">
         <tr>
           <th width="15%">No.</th>
-          <th class="content_head" width="10%">
+          <th width="10%" class="content_head">
             말머리
             <select>
               <option selected>전체</option>
@@ -111,14 +111,17 @@
         <tr>
           <td>1</td>
           <td>정보TALK</td>
-          <td id="align">혼자서도 잘해요<span>[4]</span></td>
+          <td class="td_title">혼자서도 잘해요<span>[4]</span></td>
           <td>서녕</td>
           <td>2021.06.08</td>
           <td>729</td>
           <td>32</td>
         </tr>
       </table>
-      <div class="paging">
+      <div class="btn_write_box">
+        	<button class="btn_write">글쓰기</button>
+    	</div>
+      <div class="paging_box">
         <a href="#">&laquo;</a>
         <a href="#" class="on">1</a>
         <a href="#">2</a>
@@ -126,6 +129,5 @@
         <a href="#">4</a>
         <a href="#">5</a>
         <a href="#">&raquo;</a>
-        <button id="writer">글쓰기</button>
       </div>
     </article>
