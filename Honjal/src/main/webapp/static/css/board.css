@@ -41,8 +41,8 @@
 }
 
 select {
-  width: 10px;
-  text-align: center;
+  padding: 0px 7px;
+  width: 1px;
 }
 
 .board tr th {
