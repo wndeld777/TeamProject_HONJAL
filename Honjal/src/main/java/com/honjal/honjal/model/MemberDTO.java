@@ -13,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class MemberVO {
+public class MemberDTO {
 
 	private String member_num;  	// 유저번호
 	private String member_level;	// 권한등급
