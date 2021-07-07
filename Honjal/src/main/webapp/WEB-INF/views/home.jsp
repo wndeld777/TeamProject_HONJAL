@@ -80,16 +80,16 @@ footer {
 }
 
 </style>
-<link href="${rootPath}/static/css/nav.css?ver=2021-07-04-003" rel="stylesheet" />
-<link href="${rootPath}/static/css/main.css?ver=2021-07-04-005" rel="stylesheet" />
-<link href="${rootPath}/static/css/board.css?ver=2021-07-05-004" rel="stylesheet" />
-<link href="${rootPath}/static/css/join.css?ver=2021-07-04-003" rel="stylesheet" />
-<link href="${rootPath}/static/css/read.css?ver=2021-07-04-005" rel="stylesheet" />
-<link href="${rootPath}/static/css/write_admin.css?ver=2021-07-04-003" rel="stylesheet" />
+<link href="${rootPath}/static/css/nav.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/main.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/board.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/join.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/read.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/write_admin.css?ver=2021-07-07-001" rel="stylesheet" />
 </head>
 <body>
 	<header>
-		<img src="static/images/logo_v5.jpg">
+		<img src="${rootPath}/static/images/logo_v5.jpg">
 		<ul id="menu_box">
 			<li class="menu_list">공지사항</li>
 			<li class="menu_list">정보게시판</li>
@@ -102,38 +102,11 @@ footer {
 	</header>
 	<section id="main_sec">
 		<c:choose>
-			<c:when test="${BODY == 'NOTICE_MAIN' }">
-				<%@ include file="/WEB-INF/views/notice/main.jsp"%>
+			<c:when test="${BODY == 'BOARD_MAIN' }">
+				<%@ include file="/WEB-INF/views/board_main.jsp"%>
 			</c:when>
-			<c:when test="${BODY == 'INFO_MAIN' }">
-				<%@ include file="/WEB-INF/views/info/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'TIP_MAIN' }">
-				<%@ include file="/WEB-INF/views/tip/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'INTERIOR_MAIN' }">
-				<%@ include file="/WEB-INF/views/interior/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'TALK_MAIN' }">
-				<%@ include file="/WEB-INF/views/talk/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'REVIEW_MAIN' }">
-				<%@ include file="/WEB-INF/views/review/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'QNA_MAIN' }">
-				<%@ include file="/WEB-INF/views/qna/main.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'JOIN' }">
-				<%@ include file="/WEB-INF/views/join.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'SCRAP' }">
-				<%@ include file="/WEB-INF/views/scrap.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'READ' }">
-				<%@ include file="/WEB-INF/views/read.jsp"%>
-			</c:when>
-			<c:when test="${BODY == 'WRITE_ADMIN' }">
-				<%@ include file="/WEB-INF/views/admin/write.jsp"%>
+			<c:when test="${BODY == 'WRITE' }">
+				<%@ include file="/WEB-INF/views/write.jsp"%>
 			</c:when>
 			<c:otherwise>
 				<%@ include file="/WEB-INF/views/main.jsp"%>
@@ -148,6 +121,10 @@ footer {
 	
 </body>
 <script>
+document.querySelector("header img").addEventListener("click", (e) => {
+	location.href = "${rootPath}"
+});
+
 document.querySelector("#menu_box").addEventListener("click", (e) => {
     let text = e.target.textContent;
     let url = `${rootPath}`;

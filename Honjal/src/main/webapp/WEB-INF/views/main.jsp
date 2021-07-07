@@ -14,7 +14,7 @@
       </section>
       <section id="main_slide">
         <div id="slide_img_box">
-          <img src="static/images/sample_slide.jpg">
+          <img src="${rootPath}/static/images/sample_slide.jpg">
           <img src="#" class="slide" alt="집" />
           <img src="#" class="slide" alt="집" />
         </div>
@@ -33,7 +33,7 @@
       <section id="main_best">
         <h2>🔥 [ 생활TIP ] 최근 일주일 인기글</h2>
         <div>
-          <img src="static/images/sample_best.png"/>
+          <img src="${rootPath}/static/images/sample_best.png"/>
           <ol>
             <li class="list_best">
               <span>1위 </span>1시간만에 끝! 벽걸이 에어컨 분해없는 셀프청소
@@ -58,7 +58,7 @@
       <section id="main_info">
         <h2>&#128270; 정보게시판</h2>
         <div>
-          <img src="static/images/sample_data.png"/>
+          <img src="${rootPath}/static/images/sample_data.png"/>
           <ul>
             <li class="list_data">전국 생활 쓰레기 배출 정보</li>
             <li class="list_data">전국 전기 차 충전소 정보</li>
