@@ -182,3 +182,13 @@
         </tr>
       </table>
     </article>
+    <script>
+document.querySelector("#main_user").addEventListener("click",(e)=>{
+   let text = e.target.textContent
+   let url = `${rootPath}`
+   if(text === "SIGN UP"){
+      url += "/join";
+   }
+   location.href = url
+})
+</script>
