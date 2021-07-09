@@ -8,8 +8,8 @@
         <form id="login_box" method="POST">
           <input name="" placeholder="ID" />
           <input name="" type="password" placeholder="PASSWORD" />
-          <button type="button">LOGIN</button>
-          <button type="button">SIGN UP</button>
+          <button class="btn_login" type="button">LOGIN</button>
+          <button class="btn_signup" type="button">SIGN UP</button>
         </form>
       </section>
       <section id="main_slide">
@@ -183,7 +183,7 @@
       </table>
     </article>
     <script>
-document.querySelector("#main_user").addEventListener("click",(e)=>{
+document.querySelector(".btn_signup").addEventListener("click",(e)=>{
    let text = e.target.textContent
    let url = `${rootPath}`
    if(text === "SIGN UP"){
@@ -191,4 +191,5 @@ document.querySelector("#main_user").addEventListener("click",(e)=>{
    }
    location.href = url
 })
+
 </script>
