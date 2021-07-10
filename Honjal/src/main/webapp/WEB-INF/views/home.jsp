@@ -82,7 +82,7 @@ footer {
 </style>
 <link href="${rootPath}/static/css/nav.css?ver=2021-07-07-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/main.css?ver=2021-07-07-001" rel="stylesheet" />
-<link href="${rootPath}/static/css/board.css?ver=2021-07-07-001" rel="stylesheet" />
+<link href="${rootPath}/static/css/board.css?ver=2021-07-09-002" rel="stylesheet" />
 <link href="${rootPath}/static/css/join.css?ver=2021-07-07-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/read.css?ver=2021-07-07-001" rel="stylesheet" />
 <link href="${rootPath}/static/css/write_admin.css?ver=2021-07-07-001" rel="stylesheet" />
@@ -110,6 +110,9 @@ footer {
 			</c:when>
 			<c:when test="${BODY == 'JOIN' }">
 				<%@ include file="/WEB-INF/views/member/join.jsp"%>
+			</c:when>
+			<c:when test="${BODY == 'READ' }">
+				<%@ include file="/WEB-INF/views/read.jsp"%>
 			</c:when>
 			<c:otherwise>
 				<%@ include file="/WEB-INF/views/main.jsp"%>
