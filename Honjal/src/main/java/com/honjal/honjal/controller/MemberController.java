@@ -2,6 +2,7 @@ package com.honjal.honjal.controller;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,20 +16,20 @@ import com.honjal.honjal.service.MemberService;
 
 import lombok.RequiredArgsConstructor;
 
-@RequestMapping(value="/member")
+@RequestMapping(value="/join")
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
-
+	@Autowired
 	public final MemberService memService;
 	
-	@RequestMapping(value="/join",method=RequestMethod.GET)
+	@RequestMapping(value={"/",""},method=RequestMethod.GET)
 	public String join(Model model) {
 		model.addAttribute(model);
 		return "home";
 	}
 	
-	@RequestMapping(value="/join",method=RequestMethod.POST)
+	@RequestMapping(value={"/",""},method=RequestMethod.POST)
 	public String join(MemberVO memberVO,Model model) {
 		
 		memberVO = memService.join(memberVO);
