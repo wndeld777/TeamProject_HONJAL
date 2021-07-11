@@ -16,20 +16,20 @@ import com.honjal.honjal.service.MemberService;
 
 import lombok.RequiredArgsConstructor;
 
-@RequestMapping(value="/join")
+@RequestMapping(value="/member")
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
 	@Autowired
 	public final MemberService memService;
 	
-	@RequestMapping(value={"/",""},method=RequestMethod.GET)
+	@RequestMapping(value="/join",method=RequestMethod.GET)
 	public String join(Model model) {
 		model.addAttribute(model);
 		return "home";
 	}
 	
-	@RequestMapping(value={"/",""},method=RequestMethod.POST)
+	@RequestMapping(value="/join",method=RequestMethod.POST)
 	public String join(MemberVO memberVO,Model model) {
 		
 		memberVO = memService.join(memberVO);

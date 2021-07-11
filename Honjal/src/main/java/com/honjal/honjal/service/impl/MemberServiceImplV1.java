@@ -18,7 +18,6 @@ import lombok.RequiredArgsConstructor;
 @Service("memberServiceV1")
 public class MemberServiceImplV1 implements MemberService{
 
-	@Autowired
 	protected final MemberDao memberDao;
 	
 	@Autowired

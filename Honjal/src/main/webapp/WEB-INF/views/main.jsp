@@ -187,7 +187,7 @@ document.querySelector(".btn_signup").addEventListener("click",(e)=>{
    let text = e.target.textContent
    let url = `${rootPath}`
    if(text === "SIGN UP"){
-      url += "/join";
+      url += "/member/join";
    }
    location.href = url
 })
