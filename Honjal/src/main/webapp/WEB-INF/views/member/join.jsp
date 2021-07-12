@@ -35,8 +35,8 @@ div.msg {
 		</div>
 		<div class="msg member nickname"></div>
 		<div>
-			<label>e-mail</label> <input name="member_email" type="email" required="required"
-				id="member_email" />
+			<label>e-mail</label> <input name="member_email" type="email"
+				required="required" id="member_email" />
 		</div>
 		<div class="msg member email"></div>
 	</fieldset>
@@ -47,12 +47,6 @@ div.msg {
 	</section>
 </form>
 <script>
-document.querySelector("#join_btn").addEventListener("click", (e) => {
-    //  location.href = "${rootPath}"
-    document.querySelector("form").submit()
-})
-
-
 let member_id = document.querySelector("input[name='member_id']")
 let member_pw = document.querySelector("input[name='member_pw']")
 let member_pw1 = document.querySelector("input[name='re_pw']")
@@ -64,6 +58,28 @@ let msg_member_pw1 = document.querySelector("div.member.pw1")
 let msg_member_nickname = document.querySelector("div.member.nickname")
 let msg_member_email = document.querySelector("div.member.email")
 let id_check = document.querySelector("#btn_id_check")
+
+document.querySelector("#join_btn").addEventListener("click", (e) => {
+    //  location.href = "${rootPath}"
+    if((member_id.value) == ""){
+    	member_id.focus()
+    	return false
+    }else if((member_pw.value)==""){
+    	member_pw.focus()
+    	return false
+    }else if((member_nickname.value)==""){
+    	member_nickname.focus()
+    	return false
+    }else if((member_email.value)==""){
+    	member_email.focus(){
+    		return false
+    	}else{
+    		document.querySelector("form").submit()		
+    	}
+    }
+    
+})
+
 
 if(member_nickname){
 	member_nickname.addEventListener("blur",(e)=>{

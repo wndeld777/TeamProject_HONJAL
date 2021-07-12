@@ -15,9 +15,9 @@
 	</select>
 	<insert id="insertOrUpdate" parameterType="MemberVO">
 		INSERT INTO tbl_member(
-		member_id,member_pw,member_nname,member_email
+		member_level,member_id,member_pw,member_nname,member_email
 		)VALUES(
-		#{member_id},#{member_pw},#{member_nname},#{member_email}
+		#{member_level},#{member_id},#{member_pw},#{member_nname},#{member_email}
 		)
 		ON DUPLICATE KEY UPDATE
 		member_level = member_level,
