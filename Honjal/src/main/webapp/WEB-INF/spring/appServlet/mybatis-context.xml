@@ -14,26 +14,27 @@
 			value="com.mysql.cj.jdbc.Driver" />
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/honjalDB" />
-		<property name="username" value="root" />
-		<property name="password" value="12345" />
+		<property name="username" value="honjalUser" />
+		<property name="password" value="honjal403" />
 	</bean>
 
-<!-- sqlSessionFactory -->
-	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="ds"/>
-		<property name="typeAliasesPackage" value="com.honjal.honjal.model"/>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="ds" />
+		<property name="typeAliasesPackage" value="com.honjal.honjal.model" />
 		<property name="mapperLocations" value="/WEB-INF/spring/mybatis-mapper/*-mapper.xml"/>
 	</bean>
-	<mybatis-spring:scan base-package="com.honjal.honjal.dao.ext"/>
 	
-	<!-- sqlSessionTemplate -->
-	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-		<constructor-arg ref="sqlSession"/>
+	<mybatis-spring:scan base-package="com.honjal.honjal.dao.ext"/>
+
+	<!-- sesstionTemplate -->
+	<bean class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"/>
 	</bean>
 	
-	<!-- transaction Manager -->
 	<tx:annotation-driven/>
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="ds"/>
 	</bean>
+
 </beans>

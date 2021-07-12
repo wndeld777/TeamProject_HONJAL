@@ -149,10 +149,7 @@ document.querySelector("#menu_box").addEventListener("click", (e) => {
       url += "/review";
     } else if (text === "자취 Q&A") {
       url += "/qna";
-    } else if (text === "SIGN UP") {
-      url += "/join";
-    }
-
+	}
     location.href = url;
   });
 </script>
