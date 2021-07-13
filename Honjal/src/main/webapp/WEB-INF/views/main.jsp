@@ -6,6 +6,7 @@
 	<article id="main_top">
       <section id="main_user">
         <form id="login_box" method="POST">
+        <div class="msg login error"></div>
           <input name="member_id" placeholder="ID" />
           <input name="member_pw" type="password" placeholder="PASSWORD" />
           <button class="btn_login" type="button">LOGIN</button>
@@ -194,32 +195,34 @@ document.querySelector(".btn_signup").addEventListener("click",(e)=>{
 
 let btn_login = document.querySelector("button.btn_login")
 let btn_join = document.querySelector("button.btn_signup")
-
+let msg_error = document.querySelector("div.msg.login.error")
 let input_memberid = document.querySelector("input[name='member_id']")
 let input_password = document.querySelector("input[name='member_pw']")
 
 if(btn_login){
-	btn_login.addEventListener("click",()=>{
+	btn_login.addEventListener("click",(e)=>{
 		let member_id = input_memberid.value
 		let member_pw = input_password.value
-		if(btn_login === ""){
+		if(member_id == ""){
 			alert("ID를 입력하세요")
 			input_memberid.focus()
 			return false
-		}
-		if(member_password === ""){
+		}else if(member_pw == ""){
 			alert("비밀번호를 입력하세요")
 			input_password.focus()
 			return false
+		}else{
+			document.querySelector("form").submit()
 		}
-		form.submit()
-	})
-}
-
-if(btn_join){
-	btn_join.addEventListener("click",()=>{
 		
 	})
 }
 
+let login_fail = "${LOGIN_FAIL}"
+
+	if(login_fail === "NOT_MEMBER_ID"){
+		msg_error.innerText = "사용자 ID가 없습니다!!!"
+	}else if(login_fail === "NEQ_PASS"){
+		msg_error.innerText = "비밀번호가 틀렸습니다!!!"
+	}
 </script>

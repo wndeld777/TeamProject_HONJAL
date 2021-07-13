@@ -10,8 +10,7 @@
 	</select>
 	<select id="findById" resultType="MemberVO">
 		SELECT * FROM tbl_member
-		WHERE
-		member_id = #{member_id}
+		WHERE member_id = #{member_id}
 	</select>
 	<insert id="insertOrUpdate" parameterType="MemberVO">
 		INSERT INTO tbl_member(

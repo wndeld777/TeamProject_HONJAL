@@ -15,7 +15,7 @@ import lombok.ToString;
 @Builder
 public class MemberVO {
 
-	private String member_num;  	// 유저번호
+	private Integer member_num;  	// 유저번호
 	private int member_level ;	// 권한등급
 	private String member_id;		// 아이디
 	private String member_pw;		// 비밀번호
