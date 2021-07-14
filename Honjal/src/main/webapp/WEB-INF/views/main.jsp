@@ -179,21 +179,23 @@
 	</table>
 </article>
 <script>
-document.querySelector(".btn_signup").addEventListener("click",(e)=>{
-   let text = e.target.textContent
-   let url = `${rootPath}`
-   if(text === "SIGN UP"){
-      url += "/member/join";
-   }
-   location.href = url
-})
+
 
 let btn_login = document.querySelector("button.btn_login")
 let btn_join = document.querySelector("button.btn_signup")
 let msg_error = document.querySelector("div.msg.login.error")
 let input_memberid = document.querySelector("input[name='member_id']")
 let input_password = document.querySelector("input[name='member_pw']")
-
+if(btn_join){
+	btn_join.addEventListener("click",(e)=>{
+		   let text = e.target.textContent
+		   let url = `${rootPath}`
+		   if(text === "SIGN UP"){
+		      url += "/member/join";
+		   }
+		   location.href = url
+		})
+}
 if(btn_login){
 	btn_login.addEventListener("click",(e)=>{
 		let member_id = input_memberid.value
@@ -211,7 +213,7 @@ if(btn_login){
 			return false
 		}
 		
-			document.querySelector("form").submit()	
+		document.querySelector("form").submit()	
 	})
 }
 
