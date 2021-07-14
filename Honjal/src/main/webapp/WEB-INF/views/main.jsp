@@ -10,7 +10,7 @@
 				<%@ include file="/WEB-INF/views/include/include_member.jspf"%>
 			</c:when>
 			<c:otherwise>
-				<form id="login_box" method="POST">
+				<form id="login_box" method="POST" action="http://localhost:8080/honjal/member/login">
 					<div class="msg login error"></div>
 					<input name="member_id" placeholder="ID" /> 
 					<input name="member_pw" type="password" placeholder="PASSWORD" />
@@ -200,6 +200,7 @@ if(btn_login){
 		let member_pw = input_password.value
 		let text = e.target.textContent
 		let url = `${rootPath}`
+		
 		if(member_id == ""){
 			alert("ID를 입력하세요")
 			input_memberid.focus()
@@ -208,20 +209,17 @@ if(btn_login){
 			alert("비밀번호를 입력하세요")
 			input_password.focus()
 			return false
-		}else if(text === "LOGIN"){
-			url += "/member/login";
 		}
 		
-		location.href = url
-		document.querySelector("form").submit()	
+			document.querySelector("form").submit()	
 	})
 }
 
 let login_fail = "${LOGIN_FAIL}"
 
 	if(login_fail === "NOT_MEMBER_ID"){
-		msg_error.innerText = "사용자 ID가 없습니다!!!"
-	}else if(login_fail === "NEQ_PASS"){
-		msg_error.innerText = "비밀번호가 틀렸습니다!!!"
+		alert("사용자 ID가 틀렸습니다")
+	}else if(login_fail === "NOT_PASS"){
+		alert("사용자 비밀번호가 틀렸습니다")
 	}
 </script>

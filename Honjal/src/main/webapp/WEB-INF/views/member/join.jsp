@@ -152,7 +152,7 @@ document.querySelector("#join_btn").addEventListener("click", (e) => {
     	member_email.focus()
      	return false
     }else{
-    	document.querySelector("form").submit()		
+    	document.querySelector("form").submit()
     }
     
 })
